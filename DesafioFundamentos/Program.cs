@@ -42,7 +42,17 @@ while (exibirMenu)
 			break;
 
 		case "4":
-			exibirMenu = false;
+			Console.Clear();
+			Console.WriteLine("Tem certeza que deseja sair?");
+      Console.WriteLine("1 - Sim");
+      Console.WriteLine("2 - Não");
+      string confirma = Console.ReadLine();
+
+			if (confirma == "1")
+			{
+				exibirMenu = false;
+				break;
+			}
 			break;
 
 		default:
@@ -50,7 +60,7 @@ while (exibirMenu)
 			break;
 	}
 
-	Console.WriteLine("Pressione uma tecla para continuar");
+	Console.WriteLine("Pressione uma tecla para continuar.");
 	Console.ReadLine();
 }
 
